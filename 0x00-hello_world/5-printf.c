@@ -7,7 +7,7 @@
 * this program prints "Programming is like building a multilingual puzzle
 * return: 0
 */
-int man(void)
+int main(void)
 {
 printf("with proper grammar, but the output is a piece of art,\n");
 return (0);
