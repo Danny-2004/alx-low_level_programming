@@ -5,11 +5,12 @@
 */
 int main(void)
 {
-int i = 0;
+int i = '1';
+char ch = 'a';
 for (i = 0; i <= 9; i++)
-
-printf("%d", i);
-
+putchar(i % 10 + '0');
+for (ch = 'a'; ch <= 'f'; ch++)
+putchar(ch);
 putchar('\n');
 return (0);
 }
