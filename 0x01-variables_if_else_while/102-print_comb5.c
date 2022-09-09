@@ -32,5 +32,3 @@ putchar(d4);
 putchar('\n');
 return (0);
 }
-
-
