@@ -1,31 +1,30 @@
+#include <stdio.h>
 #include "main.h"
+#define stopVar 100
 
 /**
-*main- entry point
-*Return: 0 (success)
-*/
-
+ * main - Fizz buzz challenge
+ *
+ * Return: Zero if successful
+ */
 int main(void)
 {
-int n;
+	int i = 1;
 
-for (n = 1; n <= 100; n++)
-	{
-	if ((n % 3 == 0) && (n % 5 == 0))
-		printf(" FizzBuzz");
+	do {
+		if (i % 15 == 0)
+			printf("FizzBuzz");
+		else if (i % 3 == 0)
+			printf("Fizz");
+		else if (i % 5 == 0)
+			printf("Buzz");
+		else
+			printf("%d", i);
+		if (i != stopVar)
+			printf(" ");
+		i++;
+	} while (i <= stopVar);
+	printf("\n");
 
-	else if (n % 5 == 0)
-		printf(" Buzz");
-
-	else if (n % 3 == 0)
-		printf(" Fizz");
-
-	else if (n == 1)
-		printf("%i", n);
-	else
-		printf(" %i", n);
-	}
-
-printf("\n");
-return (0);
+	return (0);
 }
