@@ -1,27 +1,18 @@
-#include<stdio.h>
+#include <stdio.h>
 
 /**
- * main - entry point
- *
- *
- *
- * Return: 0 (successful)
- *
-*/
-
+ * main - Entry point
+ * Return: Always 0
+ */
 int main(void)
 {
-int n = 612852475143;
-int i;
-int x = n / 3;
-int prime = 3;
-for (i = 10; i <= x; i++)
-{
-if ((n % i == 0) &&  i > prime)
-{
-prime = i;
-}
+	unsigned long int i = 3, n = 612852475143;
 
-}
-printf("%d", prime);
+	for (; i < 12057; i += 2)
+	{
+		while (n % i == 0 && n != i)
+			n /= i;
+	}
+	printf("%lu\n", n);
+	return (0);
 }
