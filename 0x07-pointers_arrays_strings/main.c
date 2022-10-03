@@ -1,7 +1,7 @@
 #include "main.h"
 #include <stdio.h>
-#include"_strcpn"
 
+unsigned int(n);
 int main(void)
 {
 	char *s = "hello, world";
